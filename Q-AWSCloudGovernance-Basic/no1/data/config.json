@@ -1,0 +1,1371 @@
+{
+  "fileVersion": "1.0",
+  "configSnapshotId": "1234567-abcd-1234-1234-abcdefgh",
+  "configurationItems": [
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-123456789abc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Contains NetworkInterface"
+        },
+        {
+          "resourceId": "sg-abcdefgh12345",
+          "resourceType": "AWS::EC2::SecurityGroup",
+          "name": "Is associated with SecurityGroup"
+        },
+        {
+          "resourceId": "subnet-1234567abcdef",
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is contained in Subnet"
+        },
+        {
+          "resourceId": "vol-123456abcdef",
+          "resourceType": "AWS::EC2::Volume",
+          "name": "Is attached to Volume"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "amiLaunchIndex": 0,
+        "imageId": "ami-abcdefghijk0123456",
+        "instanceId": "i-please_replace_id",
+        "instanceType": "m5.large",
+        "launchTime": "2022-02-28T02:23:16.000Z",
+        "monitoring": {
+          "state": "disabled"
+        },
+        "placement": {
+          "availabilityZone": "ap-northeast-1c",
+          "groupName": "",
+          "tenancy": "default"
+        },
+        "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+        "privateIpAddress": "12.34.56.78",
+        "productCodes": [],
+        "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+        "publicIpAddress": "12.34.56.78",
+        "state": {
+          "code": 16,
+          "name": "running"
+        },
+        "stateTransitionReason": "",
+        "subnetId": "subnet-1234567abcdef",
+        "vpcId": "vpc-abcdefgh",
+        "architecture": "x86_64",
+        "blockDeviceMappings": [
+          {
+            "deviceName": "/dev/xvda",
+            "ebs": {
+              "attachTime": "2022-02-17T04:38:39.000Z",
+              "deleteOnTermination": true,
+              "status": "attached",
+              "volumeId": "vol-123456abcdef"
+            }
+          }
+        ],
+        "clientToken": "",
+        "ebsOptimized": false,
+        "enaSupport": true,
+        "hypervisor": "xen",
+        "iamInstanceProfile": {
+          "arn": "arn:aws:iam::123456789012:instance-profile/abcdefgh1234",
+          "id": "ABCDEFGHIJK0123"
+        },
+        "elasticGpuAssociations": [],
+        "elasticInferenceAcceleratorAssociations": [],
+        "networkInterfaces": [
+          {
+            "association": {
+              "ipOwnerId": "amazon",
+              "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+              "publicIp": "12.34.56.78"
+            },
+            "attachment": {
+              "attachTime": "2022-02-17T04:38:38.000Z",
+              "attachmentId": "eni-attach-1234567abcdef",
+              "deleteOnTermination": true,
+              "deviceIndex": 0,
+              "status": "attached",
+              "networkCardIndex": 0
+            },
+            "description": "Primary network interface",
+            "groups": [
+              {
+                "groupName": "cmn",
+                "groupId": "sg-abcdefgh12345"
+              }
+            ],
+            "ipv6Addresses": [],
+            "macAddress": "0a:1b:2c:3d:4e:5f",
+            "networkInterfaceId": "eni-123456789abc",
+            "ownerId": "123456789012",
+            "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+            "privateIpAddress": "12.34.56.78",
+            "privateIpAddresses": [
+              {
+                "association": {
+                  "ipOwnerId": "amazon",
+                  "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+                  "publicIp": "12.34.56.78"
+                },
+                "primary": true,
+                "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+                "privateIpAddress": "12.34.56.78"
+              }
+            ],
+            "sourceDestCheck": true,
+            "status": "in-use",
+            "subnetId": "subnet-1234567abcdef",
+            "vpcId": "vpc-abcdefgh",
+            "interfaceType": "interface"
+          }
+        ],
+        "rootDeviceName": "/dev/xvda",
+        "rootDeviceType": "ebs",
+        "securityGroups": [
+          {
+            "groupName": "cmn",
+            "groupId": "sg-abcdefgh12345"
+          }
+        ],
+        "sourceDestCheck": true,
+        "tags": [
+          {
+            "key": "Name",
+            "value": "abcdefghi1234"
+          },
+          {
+            "key": "env",
+            "value": "stg"
+          }
+        ],
+        "virtualizationType": "hvm",
+        "cpuOptions": {
+          "coreCount": 1,
+          "threadsPerCore": 1
+        },
+        "capacityReservationSpecification": {
+          "capacityReservationPreference": "open"
+        },
+        "hibernationOptions": {
+          "configured": false
+        },
+        "licenses": [],
+        "metadataOptions": {
+          "state": "applied",
+          "httpTokens": "optional",
+          "httpPutResponseHopLimit": 1,
+          "httpEndpoint": "enabled"
+        },
+        "enclaveOptions": {
+          "enabled": false
+        }
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "stg",
+        "Name": "abcdefghi1234"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-03-07T05:27:46.623Z",
+      "configurationStateId": 1646630866623,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::Instance",
+      "resourceId": "i-please_replace_id",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:instance/i-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "ap-northeast-1c",
+      "configurationStateMd5Hash": "",
+      "resourceCreationTime": "2022-02-28T02:23:16.000Z"
+    },
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-123456789abc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Contains NetworkInterface"
+        },
+        {
+          "resourceId": "sg-abcdefgh12345",
+          "resourceType": "AWS::EC2::SecurityGroup",
+          "name": "Is associated with SecurityGroup"
+        },
+        {
+          "resourceId": "subnet-1234567abcdef",
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is contained in Subnet"
+        },
+        {
+          "resourceId": "vol-123456abcdef",
+          "resourceType": "AWS::EC2::Volume",
+          "name": "Is attached to Volume"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "amiLaunchIndex": 0,
+        "imageId": "ami-abcdefghijk0123456",
+        "instanceId": "i-please_replace_id",
+        "instanceType": "t2.micro",
+        "launchTime": "2022-02-28T02:23:16.000Z",
+        "monitoring": {
+          "state": "disabled"
+        },
+        "placement": {
+          "availabilityZone": "ap-northeast-1c",
+          "groupName": "",
+          "tenancy": "default"
+        },
+        "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+        "privateIpAddress": "12.34.56.78",
+        "productCodes": [],
+        "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+        "publicIpAddress": "12.34.56.78",
+        "state": {
+          "code": 16,
+          "name": "running"
+        },
+        "stateTransitionReason": "",
+        "subnetId": "subnet-1234567abcdef",
+        "vpcId": "vpc-abcdefgh",
+        "architecture": "x86_64",
+        "blockDeviceMappings": [
+          {
+            "deviceName": "/dev/xvda",
+            "ebs": {
+              "attachTime": "2022-02-17T04:38:39.000Z",
+              "deleteOnTermination": true,
+              "status": "attached",
+              "volumeId": "vol-123456abcdef"
+            }
+          }
+        ],
+        "clientToken": "",
+        "ebsOptimized": false,
+        "enaSupport": true,
+        "hypervisor": "xen",
+        "iamInstanceProfile": {
+          "arn": "arn:aws:iam::123456789012:instance-profile/abcdefgh1234",
+          "id": "ABCDEFGHIJK0123"
+        },
+        "elasticGpuAssociations": [],
+        "elasticInferenceAcceleratorAssociations": [],
+        "networkInterfaces": [
+          {
+            "association": {
+              "ipOwnerId": "amazon",
+              "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+              "publicIp": "12.34.56.78"
+            },
+            "attachment": {
+              "attachTime": "2022-02-17T04:38:38.000Z",
+              "attachmentId": "eni-attach-1234567abcdef",
+              "deleteOnTermination": true,
+              "deviceIndex": 0,
+              "status": "attached",
+              "networkCardIndex": 0
+            },
+            "description": "Primary network interface",
+            "groups": [
+              {
+                "groupName": "cmn",
+                "groupId": "sg-abcdefgh12345"
+              }
+            ],
+            "ipv6Addresses": [],
+            "macAddress": "0a:1b:2c:3d:4e:5f",
+            "networkInterfaceId": "eni-123456789abc",
+            "ownerId": "123456789012",
+            "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+            "privateIpAddress": "12.34.56.78",
+            "privateIpAddresses": [
+              {
+                "association": {
+                  "ipOwnerId": "amazon",
+                  "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+                  "publicIp": "12.34.56.78"
+                },
+                "primary": true,
+                "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+                "privateIpAddress": "12.34.56.78"
+              }
+            ],
+            "sourceDestCheck": true,
+            "status": "in-use",
+            "subnetId": "subnet-1234567abcdef",
+            "vpcId": "vpc-abcdefgh",
+            "interfaceType": "interface"
+          }
+        ],
+        "rootDeviceName": "/dev/xvda",
+        "rootDeviceType": "ebs",
+        "securityGroups": [
+          {
+            "groupName": "cmn",
+            "groupId": "sg-abcdefgh12345"
+          }
+        ],
+        "sourceDestCheck": true,
+        "tags": [
+          {
+            "key": "Name",
+            "value": "abcdefghi1234"
+          },
+          {
+            "key": "env",
+            "value": "stg"
+          }
+        ],
+        "virtualizationType": "hvm",
+        "cpuOptions": {
+          "coreCount": 1,
+          "threadsPerCore": 1
+        },
+        "capacityReservationSpecification": {
+          "capacityReservationPreference": "open"
+        },
+        "hibernationOptions": {
+          "configured": false
+        },
+        "licenses": [],
+        "metadataOptions": {
+          "state": "applied",
+          "httpTokens": "optional",
+          "httpPutResponseHopLimit": 1,
+          "httpEndpoint": "enabled"
+        },
+        "enclaveOptions": {
+          "enabled": false
+        }
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "stg",
+        "Name": "abcdefghi1234"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-03-07T05:27:46.623Z",
+      "configurationStateId": 1646630866623,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::Instance",
+      "resourceId": "i-please_replace_id",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:instance/i-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "ap-northeast-1c",
+      "configurationStateMd5Hash": "",
+      "resourceCreationTime": "2022-02-28T02:23:16.000Z"
+    },
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-123456789abc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Contains NetworkInterface"
+        },
+        {
+          "resourceId": "sg-abcdefgh12345",
+          "resourceType": "AWS::EC2::SecurityGroup",
+          "name": "Is associated with SecurityGroup"
+        },
+        {
+          "resourceId": "subnet-1234567abcdef",
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is contained in Subnet"
+        },
+        {
+          "resourceId": "vol-123456abcdef",
+          "resourceType": "AWS::EC2::Volume",
+          "name": "Is attached to Volume"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "amiLaunchIndex": 0,
+        "imageId": "ami-abcdefghijk0123456",
+        "instanceId": "i-please_replace_id",
+        "instanceType": "t2.micro",
+        "launchTime": "2022-02-28T02:23:16.000Z",
+        "monitoring": {
+          "state": "disabled"
+        },
+        "placement": {
+          "availabilityZone": "ap-northeast-1c",
+          "groupName": "",
+          "tenancy": "default"
+        },
+        "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+        "privateIpAddress": "12.34.56.78",
+        "productCodes": [],
+        "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+        "publicIpAddress": "12.34.56.78",
+        "state": {
+          "code": 16,
+          "name": "running"
+        },
+        "stateTransitionReason": "",
+        "subnetId": "subnet-1234567abcdef",
+        "vpcId": "vpc-abcdefgh",
+        "architecture": "x86_64",
+        "blockDeviceMappings": [
+          {
+            "deviceName": "/dev/xvda",
+            "ebs": {
+              "attachTime": "2022-02-17T04:38:39.000Z",
+              "deleteOnTermination": true,
+              "status": "attached",
+              "volumeId": "vol-123456abcdef"
+            }
+          }
+        ],
+        "clientToken": "",
+        "ebsOptimized": false,
+        "enaSupport": true,
+        "hypervisor": "xen",
+        "iamInstanceProfile": {
+          "arn": "arn:aws:iam::123456789012:instance-profile/abcdefgh1234",
+          "id": "ABCDEFGHIJK0123"
+        },
+        "elasticGpuAssociations": [],
+        "elasticInferenceAcceleratorAssociations": [],
+        "networkInterfaces": [
+          {
+            "association": {
+              "ipOwnerId": "amazon",
+              "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+              "publicIp": "12.34.56.78"
+            },
+            "attachment": {
+              "attachTime": "2022-02-17T04:38:38.000Z",
+              "attachmentId": "eni-attach-1234567abcdef",
+              "deleteOnTermination": true,
+              "deviceIndex": 0,
+              "status": "attached",
+              "networkCardIndex": 0
+            },
+            "description": "Primary network interface",
+            "groups": [
+              {
+                "groupName": "cmn",
+                "groupId": "sg-abcdefgh12345"
+              }
+            ],
+            "ipv6Addresses": [],
+            "macAddress": "0a:1b:2c:3d:4e:5f",
+            "networkInterfaceId": "eni-123456789abc",
+            "ownerId": "123456789012",
+            "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+            "privateIpAddress": "12.34.56.78",
+            "privateIpAddresses": [
+              {
+                "association": {
+                  "ipOwnerId": "amazon",
+                  "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+                  "publicIp": "12.34.56.78"
+                },
+                "primary": true,
+                "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+                "privateIpAddress": "12.34.56.78"
+              }
+            ],
+            "sourceDestCheck": true,
+            "status": "in-use",
+            "subnetId": "subnet-1234567abcdef",
+            "vpcId": "vpc-abcdefgh",
+            "interfaceType": "interface"
+          }
+        ],
+        "rootDeviceName": "/dev/xvda",
+        "rootDeviceType": "ebs",
+        "securityGroups": [
+          {
+            "groupName": "cmn",
+            "groupId": "sg-abcdefgh12345"
+          }
+        ],
+        "sourceDestCheck": true,
+        "tags": [
+          {
+            "key": "Name",
+            "value": "abcdefghi1234"
+          },
+          {
+            "key": "env",
+            "value": "prd"
+          }
+        ],
+        "virtualizationType": "hvm",
+        "cpuOptions": {
+          "coreCount": 1,
+          "threadsPerCore": 1
+        },
+        "capacityReservationSpecification": {
+          "capacityReservationPreference": "open"
+        },
+        "hibernationOptions": {
+          "configured": false
+        },
+        "licenses": [],
+        "metadataOptions": {
+          "state": "applied",
+          "httpTokens": "optional",
+          "httpPutResponseHopLimit": 1,
+          "httpEndpoint": "enabled"
+        },
+        "enclaveOptions": {
+          "enabled": false
+        }
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "prd",
+        "Name": "abcdefghi1234"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-03-07T05:27:46.623Z",
+      "configurationStateId": 1646630866623,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::Instance",
+      "resourceId": "i-please_replace_id",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:instance/i-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "ap-northeast-1c",
+      "configurationStateMd5Hash": "",
+      "resourceCreationTime": "2022-02-28T02:23:16.000Z"
+    },
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-123456789abc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Contains NetworkInterface"
+        },
+        {
+          "resourceId": "sg-abcdefgh12345",
+          "resourceType": "AWS::EC2::SecurityGroup",
+          "name": "Is associated with SecurityGroup"
+        },
+        {
+          "resourceId": "subnet-1234567abcdef",
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is contained in Subnet"
+        },
+        {
+          "resourceId": "vol-123456abcdef",
+          "resourceType": "AWS::EC2::Volume",
+          "name": "Is attached to Volume"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "amiLaunchIndex": 0,
+        "imageId": "ami-abcdefghijk0123456",
+        "instanceId": "i-please_replace_id",
+        "instanceType": "m5.large",
+        "launchTime": "2022-02-28T02:23:16.000Z",
+        "monitoring": {
+          "state": "disabled"
+        },
+        "placement": {
+          "availabilityZone": "ap-northeast-1c",
+          "groupName": "",
+          "tenancy": "default"
+        },
+        "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+        "privateIpAddress": "12.34.56.78",
+        "productCodes": [],
+        "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+        "publicIpAddress": "12.34.56.78",
+        "state": {
+          "code": 16,
+          "name": "running"
+        },
+        "stateTransitionReason": "",
+        "subnetId": "subnet-1234567abcdef",
+        "vpcId": "vpc-abcdefgh",
+        "architecture": "x86_64",
+        "blockDeviceMappings": [
+          {
+            "deviceName": "/dev/xvda",
+            "ebs": {
+              "attachTime": "2022-02-17T04:38:39.000Z",
+              "deleteOnTermination": true,
+              "status": "attached",
+              "volumeId": "vol-123456abcdef"
+            }
+          }
+        ],
+        "clientToken": "",
+        "ebsOptimized": false,
+        "enaSupport": true,
+        "hypervisor": "xen",
+        "iamInstanceProfile": {
+          "arn": "arn:aws:iam::123456789012:instance-profile/abcdefgh1234",
+          "id": "ABCDEFGHIJK0123"
+        },
+        "elasticGpuAssociations": [],
+        "elasticInferenceAcceleratorAssociations": [],
+        "networkInterfaces": [
+          {
+            "association": {
+              "ipOwnerId": "amazon",
+              "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+              "publicIp": "12.34.56.78"
+            },
+            "attachment": {
+              "attachTime": "2022-02-17T04:38:38.000Z",
+              "attachmentId": "eni-attach-1234567abcdef",
+              "deleteOnTermination": true,
+              "deviceIndex": 0,
+              "status": "attached",
+              "networkCardIndex": 0
+            },
+            "description": "Primary network interface",
+            "groups": [
+              {
+                "groupName": "cmn",
+                "groupId": "sg-abcdefgh12345"
+              }
+            ],
+            "ipv6Addresses": [],
+            "macAddress": "0a:1b:2c:3d:4e:5f",
+            "networkInterfaceId": "eni-123456789abc",
+            "ownerId": "123456789012",
+            "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+            "privateIpAddress": "12.34.56.78",
+            "privateIpAddresses": [
+              {
+                "association": {
+                  "ipOwnerId": "amazon",
+                  "publicDnsName": "ec2-12-34-56-78.ap-northeast-1.compute.amazonaws.com",
+                  "publicIp": "12.34.56.78"
+                },
+                "primary": true,
+                "privateDnsName": "ip-12-34-56-78.ap-northeast-1.compute.internal",
+                "privateIpAddress": "12.34.56.78"
+              }
+            ],
+            "sourceDestCheck": true,
+            "status": "in-use",
+            "subnetId": "subnet-1234567abcdef",
+            "vpcId": "vpc-abcdefgh",
+            "interfaceType": "interface"
+          }
+        ],
+        "rootDeviceName": "/dev/xvda",
+        "rootDeviceType": "ebs",
+        "securityGroups": [
+          {
+            "groupName": "cmn",
+            "groupId": "sg-abcdefgh12345"
+          }
+        ],
+        "sourceDestCheck": true,
+        "tags": [
+          {
+            "key": "Name",
+            "value": "abcdefghi1234"
+          },
+          {
+            "key": "env",
+            "value": "prd"
+          }
+        ],
+        "virtualizationType": "hvm",
+        "cpuOptions": {
+          "coreCount": 1,
+          "threadsPerCore": 1
+        },
+        "capacityReservationSpecification": {
+          "capacityReservationPreference": "open"
+        },
+        "hibernationOptions": {
+          "configured": false
+        },
+        "licenses": [],
+        "metadataOptions": {
+          "state": "applied",
+          "httpTokens": "optional",
+          "httpPutResponseHopLimit": 1,
+          "httpEndpoint": "enabled"
+        },
+        "enclaveOptions": {
+          "enabled": false
+        }
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "prd",
+        "Name": "abcdefghi1234"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-03-07T05:27:46.623Z",
+      "configurationStateId": 1646630866623,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::Instance",
+      "resourceId": "i-please_replace_id",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:instance/i-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "ap-northeast-1c",
+      "configurationStateMd5Hash": "",
+      "resourceCreationTime": "2022-02-28T02:23:16.000Z"
+    },
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-12345678abcdefg",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-abcdefg1234",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12345abc678",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12345abc678aba",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12123434abab",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-456123efgabc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "i-123456abcdef",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-1234abcd56",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-1234abab1234",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-123456abcdefgh",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-abab1212ab",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-abcdefg12345",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "description": "cmn",
+        "groupName": "cmn",
+        "ipPermissions": [
+          {
+            "fromPort": 9120,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 9120,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": 10050,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 10050,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": -1,
+            "ipProtocol": "icmp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": -1,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": 9100,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 9100,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          }
+        ],
+        "ownerId": "123456789012",
+        "groupId": "sg-please_replace_id",
+        "ipPermissionsEgress": [
+          {
+            "ipProtocol": "-1",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "0.0.0.0/0"
+              }
+            ],
+            "ipRanges": [
+              "0.0.0.0/0"
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "key": "Name",
+            "value": "cmn"
+          },
+          {
+            "key": "env",
+            "value": "stg"
+          }
+        ],
+        "vpcId": "vpc-abcdefgh"
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "stg",
+        "Name": "cmn"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-07-02T07:10:05.100Z",
+      "configurationStateId": 1656745805100,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::SecurityGroup",
+      "resourceId": "sg-please_replace_id",
+      "resourceName": "cmn",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "Not Applicable",
+      "configurationStateMd5Hash": ""
+    },
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-12345678abcdefg",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-abcdefg1234",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12345abc678",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12345abc678aba",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12123434abab",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-456123efgabc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "i-123456abcdef",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-1234abcd56",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-1234abab1234",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-123456abcdefgh",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-abab1212ab",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-abcdefg12345",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "description": "cmn",
+        "groupName": "cmn",
+        "ipPermissions": [
+          {
+            "fromPort": 9120,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 9120,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": 22,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 22,
+            "userIdGroupPairs": [
+              {
+                "groupId": "sg-05beedadfd498de90",
+                "userId": "123456789012"
+              }
+            ],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.2.100/32"
+              },
+              {
+                "cidrIp": "10.10.3.100/32"
+              }
+            ],
+            "ipRanges": [
+              "10.10.2.100/32",
+              "10.10.3.100/32"
+            ]
+          },
+          {
+            "fromPort": 10050,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 10050,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": -1,
+            "ipProtocol": "icmp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": -1,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": 9100,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 9100,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          }
+        ],
+        "ownerId": "123456789012",
+        "groupId": "sg-please_replace_id",
+        "ipPermissionsEgress": [
+          {
+            "ipProtocol": "-1",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "0.0.0.0/0"
+              }
+            ],
+            "ipRanges": [
+              "0.0.0.0/0"
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "key": "Name",
+            "value": "cmn"
+          },
+          {
+            "key": "env",
+            "value": "stg"
+          }
+        ],
+        "vpcId": "vpc-abcdefgh"
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "stg",
+        "Name": "cmn"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-07-02T07:10:05.100Z",
+      "configurationStateId": 1656745805100,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::SecurityGroup",
+      "resourceId": "sg-please_replace_id",
+      "resourceName": "cmn",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "Not Applicable",
+      "configurationStateMd5Hash": ""
+    },
+    {
+      "relatedEvents": [],
+      "relationships": [
+        {
+          "resourceId": "eni-12345678abcdefg",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-abcdefg1234",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12345abc678",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12345abc678aba",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-12123434abab",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "eni-456123efgabc",
+          "resourceType": "AWS::EC2::NetworkInterface",
+          "name": "Is associated with NetworkInterface"
+        },
+        {
+          "resourceId": "i-123456abcdef",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-1234abcd56",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-1234abab1234",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-123456abcdefgh",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-abab1212ab",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "i-abcdefg12345",
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        {
+          "resourceId": "vpc-abcdefgh",
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in Vpc"
+        }
+      ],
+      "configuration": {
+        "description": "cmn",
+        "groupName": "cmn",
+        "ipPermissions": [
+          {
+            "fromPort": 9120,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 9120,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": 22,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 22,
+            "userIdGroupPairs": [
+              {
+                "groupId": "sg-05beedadfd498de90",
+                "userId": "123456789012"
+              }
+            ],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.4.100/32"
+              },
+              {
+                "cidrIp": "10.10.5.100/32"
+              }
+            ],
+            "ipRanges": [
+              "10.10.4.100/32",
+              "10.10.5.100/32"
+            ]
+          },
+          {
+            "fromPort": 22,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 22,
+            "userIdGroupPairs": [
+              {
+                "groupId": "sg-05beedadfd498de90",
+                "userId": "123456789012"
+              }
+            ],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.6.100/32"
+              },
+              {
+                "cidrIp": "10.10.7.100/32"
+              }
+            ],
+            "ipRanges": [
+              "10.10.6.100/32",
+              "10.10.7.100/32"
+            ]
+          },
+          {
+            "fromPort": 10050,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 10050,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": -1,
+            "ipProtocol": "icmp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": -1,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          },
+          {
+            "fromPort": 9100,
+            "ipProtocol": "tcp",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "toPort": 9100,
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "10.10.0.0/16"
+              }
+            ],
+            "ipRanges": [
+              "10.10.0.0/16"
+            ]
+          }
+        ],
+        "ownerId": "123456789012",
+        "groupId": "sg-please_replace_id",
+        "ipPermissionsEgress": [
+          {
+            "ipProtocol": "-1",
+            "ipv6Ranges": [],
+            "prefixListIds": [],
+            "userIdGroupPairs": [],
+            "ipv4Ranges": [
+              {
+                "cidrIp": "0.0.0.0/0"
+              }
+            ],
+            "ipRanges": [
+              "0.0.0.0/0"
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "key": "Name",
+            "value": "cmn"
+          },
+          {
+            "key": "env",
+            "value": "stg"
+          }
+        ],
+        "vpcId": "vpc-abcdefgh"
+      },
+      "supplementaryConfiguration": {},
+      "tags": {
+        "env": "stg",
+        "Name": "cmn"
+      },
+      "configurationItemVersion": "1.3",
+      "configurationItemCaptureTime": "2022-07-02T07:10:05.100Z",
+      "configurationStateId": 1656745805100,
+      "awsAccountId": "123456789012",
+      "configurationItemStatus": "OK",
+      "resourceType": "AWS::EC2::SecurityGroup",
+      "resourceId": "sg-please_replace_id",
+      "resourceName": "cmn",
+      "ARN": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-please_replace_id",
+      "awsRegion": "ap-northeast-1",
+      "availabilityZone": "Not Applicable",
+      "configurationStateMd5Hash": ""
+    }
+  ]
+}
